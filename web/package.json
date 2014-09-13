@@ -1,0 +1,11 @@
+{
+  "name": "Pixie",
+  "version": "0.0.1",
+  "description": "Pixie, ebook, interativo, contemporaneo, divertido",
+  "main": "main.js",
+  "scripts": {
+    "test": "console.log('Pixie: Ebooks interativos\");"
+  },
+  "author": "Wes",
+  "license": "WTF"
+}
