@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
 	bs   = require('browser-sync'),
 	sass = require('gulp-ruby-sass'),
-	reload = bs.reload;
+	reload = bs.reload,
+	fontgen = require('gulp-fontgen');
 
 gulp.task('bs', function() {
 	bs({
@@ -21,6 +22,13 @@ gulp.task('sass', function() {
       .on('error', function (err) { console.log(err.message); })
       .pipe(gulp.dest('./dist/css/'))
       .pipe(reload({ stream: true }));
+});
+
+gulp.task('fontgen', function() {
+    return gulp.src('dist/fonts/Aller_Rg.ttf')
+    	   .pipe(fontgen({
+    	   		dest: "./dist/fonts/style/"
+    	   }));
 });
 
 gulp.task('default', ['sass', 'bs'], function() {
