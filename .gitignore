@@ -1,4 +1,4 @@
 node_modules
 src
 .tmp
-.sass_cache
+.sass-cache
