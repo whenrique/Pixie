@@ -3,3 +3,4 @@ src
 .tmp
 .sass-cache
 main.css.map
+bower_components
