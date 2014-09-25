@@ -2,7 +2,8 @@ var gulp = require('gulp'),
 	bs   = require('browser-sync'),
 	sass = require('gulp-ruby-sass'),
 	reload = bs.reload,
-	fontgen = require('gulp-fontgen');
+  jshint = require('gulp-jshint'),
+  uglify = require('gulp-uglify');
 
 gulp.task('bs', function() {
 	bs({
@@ -24,14 +25,17 @@ gulp.task('sass', function() {
       .pipe(reload({ stream: true }));
 });
 
-gulp.task('fontgen', function() {
-    return gulp.src('dist/fonts/Aller_Rg.ttf')
-    	   .pipe(fontgen({
-    	   		dest: "./dist/fonts/style/"
-    	   }));
+gulp.task('js', function() {
+    return gulp.src('./src/js/*.js')
+      .pipe(jshint())
+      .pipe(jshint.reporter('default'))
+      .pipe(uglify())
+      .pipe(gulp.dest('./dist/js/'))
+      .pipe(reload({ stream: true }));
 });
 
 gulp.task('default', ['sass', 'bs'], function() {
 	gulp.watch('src/scss/*.scss', ['sass']);
-    gulp.watch('*.html', ['bs-reload']);
+  gulp.watch('src/js/*.js', ['js']);
+  gulp.watch('*.html', ['bs-reload']);
 });

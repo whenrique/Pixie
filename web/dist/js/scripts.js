@@ -1,1 +1,1 @@
-console.log("olá mundo");
+!function(t){t(".menu a").on("click",function(o){o.preventDefault();var a=t(this).attr("href");t("body > section").each(function(){var o=t(this).attr("id");a==o&&(t("html, body").animate({scrollTop:jQuery("#"+o).offset().top},800),console.log("lalala"))})})}(jQuery);
