@@ -8,7 +8,7 @@ $blue: #00808f;
 $blue2: #006371;
 $white: #fff;
 $black: #000;
-$red: #f00;
+$red: #d9272d;
 $yellow: #f5d352;
 $green: #73c495;
 
@@ -28,8 +28,7 @@ $green: #73c495;
 		  box-sizing: border-box;
 }
 .clearfix { zoom: 1; }
-.clearfix:after,
-.clearfix:before {
+.clearfix:after {
 	content: '';
 	display: block;
 	width: 100%;
@@ -107,7 +106,7 @@ h1 { text-transform: uppercase; }
 
 //sprite
 .sprite {
-	background-image: url('../images/sprite/spritesheet1.png');
+	background-image: url('../images/sprite/spritesheet.png');
 	background-repeat: no-repeat;
 	text-indent: -9999px;
 }
@@ -182,7 +181,8 @@ header {
 		span {
 			display: inline-block;
 			position: absolute;
-			width: 10%;
+			width: 15%;
+			text-align: center;
 
 			img { max-width: 100%; }
 		}
@@ -193,7 +193,7 @@ header {
 			top: 70px;
 			//top: 0px;
 
-			width: 15%;
+			width: 20%;
 		 }
 		.pixie-2 { 
 			background-position: -10px -1892px;
@@ -264,15 +264,15 @@ header {
 
 		span {
 			width: 190px;
-			height: 190px;
 			display: inline-block;
 			position: absolute;
+
+			img { max-width: 100%; }
 		}
 
 		.pixie-1 { 
 			background-position: -10px -349px;
 			width: 279px;
-			height: 244px;
 			left: 511px;
 			//top: 62px;
 			top: 0px;
@@ -320,6 +320,25 @@ header {
 		font-size: 1em;
 		display: inline-block;
 		color: $white;
+		vertical-align: middle;
+
+		div { 
+			height: 220px;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.first {
+			background-image: url('../images/static/etapa-1.png');
+		}
+		.second {
+			background-image: url('../images/static/etapa-2.png');
+		}
+		.third {
+			background-image: url('../images/static/etapa-3.png');
+		}
+
+		img { max-width: 50%; }
 	}
 }
 
@@ -338,21 +357,14 @@ header {
 	}
 
 	.text {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		z-index: 3;
-		top: 0;
 
-		h1 { 
+		h1 {
+			font-size: 3.75em;
+			width: 100%;
+			height: 400px;
 			position: absolute;
-			width: 900px;
-			height: 630px;
 			top: 0;
 			bottom: 0;
-			left: 0;
-			right: 0;
-			font-size: 3.75em;
 		}
 	}
 }
@@ -362,6 +374,7 @@ header {
 	background-image: url('../images/static/bg-mosaic.png');
 	background-position: left center;
 	background-repeat: no-repeat;
+	background-size: contain;
 
 	.wrapper {
 		width: 49.7%;
@@ -412,4 +425,223 @@ footer {
 
 	}
 	.right { clear: right; }
+}
+
+@media only screen and (max-width : 1366px) {
+	body {
+		font-size: .8em;
+	}
+
+	#proposta {
+
+		.text { 
+			padding-top: 12%;
+		}
+
+		.pixies {
+			width: 28%;
+			top: 0;
+			right: 30px;
+
+			span {
+				width: 30%;
+			}
+
+			.pixie-1 { 
+				background-position: -10px -603px;
+				right: 326px;
+				top: 70px;
+				//top: 0px;
+
+				width: 50%;
+			}
+			.pixie-2 { 
+				background-position: -10px -1892px;
+				right: 369px;
+				top: 240px;
+				//top: 251px;
+			}
+			.pixie-3 { 
+				background-position: -10px -2088px;
+				right: 249px;
+				top: 240px;
+				//top: 251px;
+			}
+			.pixie-4 { 
+				background-position: -10px -2285px;
+				right: 249px;
+				top: 361px;
+				//top: 450px;
+			}
+			.pixie-5 { 
+				background-position: -10px -2480px;
+				right: 129px;
+				top: 361px;
+				//top: 450px;
+			}
+			.pixie-6 { 
+				background-position: -10px -2676px;
+				right: 129px;
+				top: 481px;
+				//top: 650px;
+			}
+		}
+	}
+
+	#descubra {
+		background-color: $yellow;
+
+		.text {
+			padding-top: 12%;
+			color: $white;
+			width: 46%;
+			margin-right: 14%;
+
+			p {
+				font-size: .8em;
+			}
+		}
+
+		.slider {
+			width: 46%;
+			margin-right: 14%;
+			position: relative;
+
+			.ar-l {
+				background-position: -210px -981px;
+				left: -14%;
+			}
+			.ar-r {
+				background-position: -254px -981px;
+				right: -15%;
+			}
+			.slider-wrapper {
+				width: 100%;
+
+				img { max-width: 100%; }
+			}
+		}
+
+		.pixies {
+			position: absolute;
+			width: 28%;
+			top: 78px;
+
+			span {
+				width: 190px;
+				display: inline-block;
+				position: absolute;
+
+				width: 30%;
+			}
+
+			.pixie-1 { 
+				background-position: -10px -349px;
+				left: 369px;
+				top: 0px;
+
+				width: 50%;
+			 }
+			.pixie-2 { 
+				background-position: -10px -1494px;
+				left: 414px;
+				top: 170px;
+			 }
+			.pixie-3 { 
+				background-position: -10px -895px;
+				left: 294px;
+				top: 170px;
+			 }
+			.pixie-4 { 
+				background-position: -10px -1294px;
+				left: 293px;
+				top: 290px;
+			 }
+			.pixie-5 { 
+				background-position: -10px -1094px;
+				left: 173px;
+				top: 290px;
+			 }
+			.pixie-6 { 
+				background-position: -10px -1693px;
+				left: 292px;
+				top: 410px;
+			 }
+		}
+	}
+
+	#etapas.pad { padding-top: 2.5%; }
+	#etapas {
+	background-color: $red;
+	text-align: center;
+	height: 60%;
+
+		.text {
+			line-height: 1;
+
+			p {
+				line-height: 1.5;
+				margin: 10px 0 0;
+			}
+		}
+	}
+
+	#video {
+
+		.text {
+
+			h1 {
+				font-size: 3em;
+			}
+		}
+	}
+
+	#comece-a-ler {
+
+		.wrapper {
+			width: 49.7%;
+			margin-top: 5%;
+
+			img { max-width: 40%; }
+
+			.text {
+				width: 52.6%;
+				margin-top: 11%;
+				color: $white;
+
+				h1 {
+					color: $blue;
+				}
+
+				p {
+					font-size: .8em; 
+				}
+
+				.compre {
+					width: 100%;
+					padding: 10% 0;
+					border: 3px solid $white;
+					border-radius: 30px 30px 0 30px;
+				}
+
+				a { 
+					display: inline-block;
+					margin-top: 50px;
+
+					img { 
+						max-width: 100%;
+					}
+				}
+
+				.appstore {
+
+					width: 53%;
+				}
+
+				.google-play {
+					width: 44%;
+				}
+			}
+		}
+	}
 }
