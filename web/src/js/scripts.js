@@ -1,6 +1,5 @@
-(function($){
-
-	$('.menu a').on('click', function(e){
+$(document).ready(function($){
+		$('.menu a').on('click', function(e){
 		e.preventDefault();
 		var href = $(this).attr('href');
 
@@ -11,10 +10,7 @@
 				$('html, body').animate({
 	                scrollTop: jQuery('#'+id).offset().top
 	            }, 800);
-
-	            console.log('lalala')
 			}
-		})
+		});
 	});
-
-})(jQuery);
+});
