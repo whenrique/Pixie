@@ -9,7 +9,7 @@ $blue2: #006371;
 $white: #fff;
 $black: #000;
 $red: #d9272d;
-$yellow: #f5d352;
+$yellow: #f2ba45;
 $green: #73c495;
 $gray: #666;
 
@@ -259,6 +259,9 @@ header {
 			background-position: -254px -981px;
 			right: -15%;
 		}
+
+
+		img { max-width: 100%; }
 	}
 
 	.pixies {
@@ -385,6 +388,8 @@ header {
 		width: 49.7%;
 		margin-top: 5%;
 
+		img { max-width: 100%; }
+
 		.text {
 			width: 52.6%;
 			margin-top: 11%;
@@ -413,13 +418,14 @@ header {
 				}
 			}
 
-				.appstore {
-					width: 53%;
-				}
+			.appstore {
+				width: 53%;
+			}
 
-				.google-play {
-					width: 44%;
-				}
+			.google-play {
+				width: 44%;
+			}
+			
 
 		}
 	}
@@ -445,6 +451,92 @@ footer {
 
 	}
 	.right { clear: right; }
+}
+
+@media only screen and (max-width : 1440px){
+	#proposta {
+		.pixies {
+			span { width: 11%; }
+
+			.pixie-1 {
+				right: 363px;
+				top: 114px;
+				width: 16%;
+			}
+
+			.pixie-2 {
+				right: 398px;
+				top: 323px;
+			}
+
+			.pixie-3 {
+				right: 230px;
+				top: 323px;
+			}
+
+			.pixie-4 {
+				right: 230px;
+				top: 491px;
+			}
+
+			.pixie-5 {
+				right: 63px;
+				top: 491px;
+			}
+
+			.pixie-6 {
+				right: 63px;
+				top: 658px;
+			}
+		}
+	}
+
+	#descubra {
+		.pixies {
+			span { width: 11%; }
+
+			.pixie-1 {
+				left: 363px;
+				top: 154px;
+				width: 16%;
+			}
+
+			.pixie-2 {
+				left: 398px;
+				top: 363px;
+			}
+
+			.pixie-3 {
+				left: 230px;
+				top: 363px;
+			}
+
+			.pixie-4 {
+				left: 230px;
+				top: 531px;
+			}
+
+			.pixie-5 {
+				left: 63px;
+				top: 531px;
+			}
+
+			.pixie-6 {
+				left: 230px;
+				top: 698px;
+			}
+		}
+	}
+
+	#comece-a-ler {
+
+		.wrapper {
+			width: 65%;
+			margin-top: 5%;
+
+			img { max-width: 100%; }
+		}
+	}
 }
 
 @media only screen and (max-width : 1366px) {
@@ -537,8 +629,6 @@ footer {
 			}
 			.slider-wrapper {
 				width: 100%;
-
-				img { max-width: 100%; }
 			}
 		}
 
