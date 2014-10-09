@@ -1,5 +1,5 @@
 $(document).ready(function($){
-		$('.menu a').on('click', function(e){
+	$('.menu a').on('click', function(e){
 		e.preventDefault();
 		var href = $(this).attr('href');
 
@@ -13,4 +13,11 @@ $(document).ready(function($){
 			}
 		});
 	});
+
+	$('header .pixie').on('click', function(e){
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: 0
+		}, 800);
+	})
 });
