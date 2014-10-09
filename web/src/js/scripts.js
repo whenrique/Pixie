@@ -19,5 +19,16 @@ $(document).ready(function($){
 		$('html, body').animate({
 			scrollTop: 0
 		}, 800);
-	})
+	});
+
+	var h = $(window).height();
+	
+	$('.arrow').on('click', function(){
+		var s = $(window).scrollTop();
+		$('html, body').animate({
+			scrollTop: s + h
+		}, 800);
+		console.log(s,h);
+	});
+
 });
