@@ -13,22 +13,20 @@ $(document).ready(function($){
 			}
 		});
 	});
-
+		
 	$('header .pixie').on('click', function(e){
 		e.preventDefault();
 		$('html, body').animate({
 			scrollTop: 0
 		}, 800);
 	});
-
-	var h = $(window).height();
 	
 	$('.arrow').on('click', function(){
 		var s = $(window).scrollTop();
 		$('html, body').animate({
-			scrollTop: s + h
+			// scrollTop: s + h
+			scrollTop: a.offset().top
 		}, 800);
-		console.log(s,h);
 	});
 
 });
