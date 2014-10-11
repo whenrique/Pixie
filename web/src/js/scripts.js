@@ -22,7 +22,7 @@ $(document).ready(function($){
 	});
 	
 	$('.arrow').on('click', function(){
-		var s = $(window).scrollTop();
+		var a = $(this).parent().next();
 		$('html, body').animate({
 			// scrollTop: s + h
 			scrollTop: a.offset().top
