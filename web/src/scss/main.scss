@@ -125,7 +125,8 @@ header {
 	z-index: 100;
 
 	.pixie a {
-		background-position: -10px -850px;
+		background-position: -7px -600px;
+		background-size: cover;
 		width: 225px;
 		height: 35px;
 		display: inline-block;
@@ -163,93 +164,88 @@ header {
 #proposta {
 	background-color: $blue;
 
-	.text {
-		width: 42%;
-		padding-top: 15%;
-		color: #fff;
-		margin-left: 19%;
+	.wrapper {
+		width: 58%;
+	
 
-		p {
-			font-size: .8em;
+		.text {
+			width: 48%;
+			padding-top: 15%;
+			color: #fff;
+			margin-left: 19%;
+
+			p {
+				font-size: .8em;
+			}
 		}
 	}
 
 	.arrow { background-position: -210px -938px; }
 
 	.pixies {
-		position: absolute;
-		width: 100%;
+		position: relative;
+		width: 39%;
 		top: 0;
-		right: 0;
+		right: 30px;
 
 		span {
-			display: inline-block;
-			position: absolute;
-			width: 9%;
-			text-align: center;
+			width: 23.2%;
+			position: static;
 
 			img { max-width: 100%; }
 		}
 
 		.pixie-1 { 
-			background-position: -10px -603px;
-			right: 483px;
-			top: 134px;
-			//top: 0px;
-
-			width: 14%;
-		 }
+			width: 34.7%;
+			margin-bottom: 10px;
+		}
 		.pixie-2 { 
-			background-position: -10px -1892px;
-			right: 536px;
-			top: 377px;
-			//top: 251px;
-		 }
+			clear: left;
+			margin-left: 5.7%;
+			margin-bottom: 10px;
+			margin-right: 10px;
+		}
 		.pixie-3 { 
-			background-position: -10px -2088px;
-			right: 355px;
-			top: 377px;
-			//top: 251px;
-		 }
+			clear: right;
+		}
 		.pixie-4 { 
-			background-position: -10px -2285px;
-			right: 355px;
-			top: 559px
-			//top: 450px;
-		 }
+			clear: left;
+			margin-left: 31%;
+			margin-right: 2%;
+		}
 		.pixie-5 { 
-			background-position: -10px -2480px;
-			right: 171px;
-			top: 559px;
-			//top: 450px;
-		 }
+			clear: right;
+			margin-bottom: 10px;
+		}
 		.pixie-6 { 
-			background-position: -10px -2676px;
-			right: 171px;
-			top: 740px;
-			//top: 650px;
-		 }
+			clear: right;
+			margin-right: 20.5%;
+		}
 	}
 }
 
 #descubra {
 	background-color: $yellow;
+	
+	.wrapper {
+		width: 58%;
 
-	.text {
-		padding-top: 244px;
-		color: $white;
-		width: 46%;
-		margin-right: 14%;
+		.text {
+			padding-top: 244px;
+			color: $white;
+			width: 46%;
+			margin-right: 14%;
 
-		h1 { font-size: 24px; }
+			h1 { font-size: 24px; }
 
-		p {
-			font-size: .8em;
+			p {
+				font-size: .8em;
+			}
 		}
 	}
 
 	.slider {
-		width: 46%;
+		width: 60%;
 		margin-right: 14%;
 		position: relative;
 
@@ -267,55 +263,42 @@ header {
 	}
 
 	.pixies {
-		position: absolute;
-		width: 100%;
-		top: 0;
+		width: 39%;
+		position: relative;
+		margin-top: 4%;
 
 		span {
-			width: 190px;
-			display: inline-block;
-			position: absolute;
-			width: 14%;
+			position: static;
+			width: 23.2%;
 
 			img { max-width: 100%; }
 		}
 
 		.pixie-1 { 
-			background-position: -10px -349px;
-			width: 279px;
-			left: 511px;
-			//top: 62px;
-			top: 100px;
+			width: 34.7%;
+			margin-bottom: 10px;
 		 }
 		.pixie-2 { 
-			background-position: -10px -1494px;
-			left: 364px;
-			//top: 320px;
-			top: 351px;
+			clear: right;
+			margin-right: 5.4%;
+			margin-left: 2%;
 		 }
 		.pixie-3 { 
-			background-position: -10px -895px;
-			left: 566px;
-			//top: 320px;
-			top: 351px;
+			clear: left;
+			margin-bottom: 2%;
 		 }
 		.pixie-4 { 
-			background-position: -10px -1294px;
-			left: 160px;
-			//top: 521px;
-			top: 550px;
+			clear: right;
+			margin-right: 30.5%;
+			margin-left: 2%;
+			margin-bottom: 2%;
 		 }
 		.pixie-5 { 
-			background-position: -10px -1094px;
-			left: 363px;
-			//top: 521px;
-			top: 550px;
+			clear: left;
 		 }
-		.pixie-6 { 
-			background-position: -10px -1693px;
-			left: 368px;
-			//top: 725px;
-			top: 750px;
+		.pixie-6 {
+			clear: right;
+			margin-left: 46.1%;
 		 }
 	}
 }
@@ -456,80 +439,6 @@ footer {
 }
 
 @media only screen and (max-width : 1440px){
-	#proposta {
-		.pixies {
-			span { width: 11%; }
-
-			.pixie-1 {
-				right: 363px;
-				top: 114px;
-				width: 16%;
-			}
-
-			.pixie-2 {
-				right: 398px;
-				top: 323px;
-			}
-
-			.pixie-3 {
-				right: 230px;
-				top: 323px;
-			}
-
-			.pixie-4 {
-				right: 230px;
-				top: 491px;
-			}
-
-			.pixie-5 {
-				right: 63px;
-				top: 491px;
-			}
-
-			.pixie-6 {
-				right: 63px;
-				top: 658px;
-			}
-		}
-	}
-
-	#descubra {
-		.pixies {
-			span { width: 11%; }
-
-			.pixie-1 {
-				left: 363px;
-				top: 154px;
-				width: 16%;
-			}
-
-			.pixie-2 {
-				left: 398px;
-				top: 363px;
-			}
-
-			.pixie-3 {
-				left: 230px;
-				top: 363px;
-			}
-
-			.pixie-4 {
-				left: 230px;
-				top: 531px;
-			}
-
-			.pixie-5 {
-				left: 63px;
-				top: 531px;
-			}
-
-			.pixie-6 {
-				left: 230px;
-				top: 698px;
-			}
-		}
-	}
-
 	#comece-a-ler {
 
 		.wrapper {
@@ -560,57 +469,12 @@ footer {
 	}
 
 	#proposta {
+		
+		.wrapper {		
 
-		.text { 
-			padding-top: 12%;
-		}
-
-		.pixies {
-			width: 28%;
-			top: 0;
-			right: 30px;
-
-			span {
-				width: 30%;
-			}
-
-			.pixie-1 { 
-				background-position: -10px -603px;
-				right: 326px;
-				top: 70px;
-				//top: 0px;
-
-				width: 50%;
-			}
-			.pixie-2 { 
-				background-position: -10px -1892px;
-				right: 369px;
-				top: 240px;
-				//top: 251px;
-			}
-			.pixie-3 { 
-				background-position: -10px -2088px;
-				right: 249px;
-				top: 240px;
-				//top: 251px;
-			}
-			.pixie-4 { 
-				background-position: -10px -2285px;
-				right: 249px;
-				top: 361px;
-				//top: 450px;
-			}
-			.pixie-5 { 
-				background-position: -10px -2480px;
-				right: 129px;
-				top: 361px;
-				//top: 450px;
-			}
-			.pixie-6 { 
-				background-position: -10px -2676px;
-				right: 129px;
-				top: 481px;
-				//top: 650px;
+			.text { 
+				padding-top: 12%;
+				margin-left: 0;
 			}
 		}
 	}
@@ -618,17 +482,19 @@ footer {
 	#descubra {
 		background-color: $yellow;
 
-		.text {
-			padding-top: 12%;
-			color: $white;
-			width: 46%;
-			margin-right: 14%;
+		.wrapper {
 
-			h1 { font-size: 19px; }
+			.text {
+				padding-top: 12%;
+				color: $white;
+				margin-right: 14%;
+
+				h1 { font-size: 19px; }
+			}
 		}
 
+
 		.slider {
-			width: 46%;
 			margin-right: 14%;
 			position: relative;
 
@@ -645,52 +511,7 @@ footer {
 			}
 		}
 
-		.pixies {
-			position: absolute;
-			width: 28%;
-			top: 78px;
-
-			span {
-				width: 190px;
-				display: inline-block;
-				position: absolute;
-
-				width: 30%;
-			}
-
-			.pixie-1 { 
-				background-position: -10px -349px;
-				left: 369px;
-				top: 0px;
-
-				width: 50%;
-			 }
-			.pixie-2 { 
-				background-position: -10px -1494px;
-				left: 414px;
-				top: 170px;
-			 }
-			.pixie-3 { 
-				background-position: -10px -895px;
-				left: 294px;
-				top: 170px;
-			 }
-			.pixie-4 { 
-				background-position: -10px -1294px;
-				left: 293px;
-				top: 290px;
-			 }
-			.pixie-5 { 
-				background-position: -10px -1094px;
-				left: 173px;
-				top: 290px;
-			 }
-			.pixie-6 { 
-				background-position: -10px -1693px;
-				left: 292px;
-				top: 410px;
-			 }
-		}
+		.pixies { margin-top: 2%; }
 	}
 
 	#etapas.pad { padding-top: 2.5%; }
