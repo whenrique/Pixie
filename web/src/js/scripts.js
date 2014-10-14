@@ -1,5 +1,5 @@
-$(document).ready(function($){
-	$('.menu a').on('click', function(e){
+(function($){
+		$('.menu a').on('click', function(e){
 		e.preventDefault();
 		var href = $(this).attr('href');
 
@@ -24,9 +24,48 @@ $(document).ready(function($){
 	$('.arrow').on('click', function(){
 		var a = $(this).parent().next();
 		$('html, body').animate({
-			// scrollTop: s + h
 			scrollTop: a.offset().top
 		}, 800);
 	});
 
-});
+	//animate pixies
+	new WOW().init();
+	proposta();
+	descubra();
+
+	var h = $(window).height(),
+		flag = false;
+		dflt 	= ['flipOutY', 'flipOutX', 'zoomOut', 'flipOutX', 'rotateOutUpLeft', 'zoomOut'],
+		effect 	= ['bounceInDown', 'flipInX', 'zoomIn', 'flipInX', 'bounceInUp', 'zoomIn'];
+	function proposta(){
+		var pixie 	= $('#proposta .wow');
+
+		$(window).scroll(function(){
+			$(pixie).each(function(id){
+				var s = $(window).scrollTop();
+
+				if(s != h) {
+					$(this).css({'-webkit-animation-name': dflt[id]});
+				} else {
+					$(this).css({'-webkit-animation-name': effect[id], 'visibility': 'visible'});
+				}
+			});
+		});
+	}
+
+	function descubra(){
+		var pixie 	= $('#descubra .wow');
+
+		$(window).scroll(function(){
+			$(pixie).each(function(id){
+				var s = $(window).scrollTop();
+
+				if(s != h * 2) {
+					$(this).css({'-webkit-animation-name': dflt[id]});
+				} else {
+					$(this).css({'-webkit-animation-name': effect[id], 'visibility': 'visible'});
+				}
+			});
+		});
+	}
+})(jQuery);

@@ -34,7 +34,7 @@ gulp.task('js', function() {
       .pipe(reload({ stream: true }));
 });
 
-gulp.task('default', ['sass', 'bs'], function() {
+gulp.task('default', ['sass', 'bs', 'js'], function() {
 	gulp.watch('src/scss/*.scss', ['sass']);
   gulp.watch('src/js/*.js', ['js']);
   gulp.watch('*.html', ['bs-reload']);
