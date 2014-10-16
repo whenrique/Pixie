@@ -3,3 +3,4 @@ node_modules
 .sass-cache
 main.css.map
 bower_components
+npm-debug.log
