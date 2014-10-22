@@ -577,3 +577,76 @@ footer {
 		}
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.text { font-size: 2em; }
+	#era-uma-vez {
+		.pixie {
+			width: 26%;
+		}
+		.text {
+			width: 100%
+		}
+	}
+	#proposta {
+		.wrapper {
+			.text{
+				width: 75%;
+				padding-top: 22%;
+			}
+		}
+		.pixies {
+			padding-top: 5%;
+
+			span { width: 29.2%; }
+
+			.pixie-1 {
+				width: 40.7%;
+			}
+			.pixie-2 {
+				margin-left: 5.7%;
+			}
+			.pixie-4 {
+				margin-left: 37%;
+			}
+			.pixie-6 {
+				margin-right: 2.5%;
+			}
+		}
+	}
+
+	#descubra {
+		.wrapper {
+			.text{
+				width: 80%;
+				padding-top: 22%;
+			}
+			.slider {
+				width: 85%;
+			}
+		}
+		.pixies {
+			padding-top: 5%;
+
+			span { width: 29.2%; }
+			.pixie-1 { width: 40.7%; }
+			.pixie-4 { margin-right: 36.5%; }
+			.pixie-6 { margin-left: 34.1%; }
+
+		}
+	}
+	#etapas {
+		.stage{
+			font-size: 0.6em;
+		}
+	}
+	#comece-a-ler {
+		.wrapper {
+			width: 75%;
+			.text {
+				width: 53.6%;
+				p { font-size: 0.7em; }
+			}
+		}
+	}
+}

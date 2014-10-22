@@ -68,4 +68,18 @@
 			});
 		});
 	}
+
+  	function disable_scroll() {
+		if (window.addEventListener) {
+		    window.addEventListener('DOMMouseScroll', wheel, false);
+		}
+		window.onmousewheel = document.onmousewheel = wheel;
+	}
+
+	function enable_scroll() {
+	  	if (window.removeEventListener) {
+	    	window.removeEventListener('DOMMouseScroll', wheel, false);
+		}
+		window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
+	}
 })(jQuery);
