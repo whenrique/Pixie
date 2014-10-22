@@ -650,3 +650,36 @@ footer {
 		}
 	}
 }
+@media screen and (max-width: 1024px) {
+	header {
+		.pixie {
+			a {
+				width: 220px;
+				background-position: -7px -585px;
+			}
+		}
+	}
+	#era-uma-vez {
+		.pixie {
+			width: 100%;
+			padding-top: 20%;
+		}
+	}
+	#etapas {
+		height: 40%;
+
+		.stage {
+			margin: 0 3%;
+		}
+	}
+	#video {
+		.pixie {
+			width: 100%;
+			text-align: center;
+			opacity: 0.4;
+		}
+		.text h1 {
+			height: 600px;
+		}
+	}
+}
