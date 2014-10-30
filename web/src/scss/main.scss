@@ -636,8 +636,12 @@ footer {
 		}
 	}
 	#etapas {
-		.stage{
-			font-size: 0.6em;
+		.wrapper {
+			width: 96.4%;
+			
+			.stage{
+				font-size: 0.6em;
+			}
 		}
 	}
 	#comece-a-ler {
@@ -650,7 +654,7 @@ footer {
 		}
 	}
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
 	header {
 		.pixie {
 			a {

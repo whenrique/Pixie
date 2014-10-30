@@ -34,7 +34,7 @@
 	descubra();
 
 	var h = $(window).height(),
-		flag = false;
+		flag = false,
 		dflt 	= ['flipOutY', 'flipOutX', 'zoomOut', 'flipOutX', 'rotateOutUpLeft', 'zoomOut'],
 		effect 	= ['bounceInDown', 'flipInX', 'zoomIn', 'flipInX', 'bounceInUp', 'zoomIn'];
 	function proposta(){
