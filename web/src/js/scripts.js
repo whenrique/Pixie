@@ -86,4 +86,31 @@
 	var pixillax = document.querySelector('.pixillax'),
 		parallax = new Parallax(pixillax);
 
+	$('.pixie-drag li > img').draggable({
+		snap: '.pixie-drag li',
+		snapMode: 'inner',
+		revert: 'invalid'
+	});
+	$('.pixie-drag li').droppable({
+		tolerance: 'pointer',
+		drop: function(e, ui){
+			$(this).addClass('not-empty');
+			$(this).droppable('disable');
+		},
+		out: function(e, ui){
+			$('.pixie-drag li').droppable('enable');
+			$(this).removeClass('not-empty');
+		},
+		activate: function(e, ui){
+			$('.pixie-drag li').each(function(){
+				if ($(this).hasClass('not-empty')){
+					$(this).droppable('disable');
+				} else {
+					$(this).droppable('enable');
+					$(this).removeClass('not-empty');
+				}
+			});
+		}
+	});
+
 })(jQuery);

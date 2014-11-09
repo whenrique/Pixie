@@ -393,6 +393,33 @@ header {
 		width: 49.7%;
 		margin-top: 5%;
 
+		.pixie-drag {
+			position: relative;
+			width: 43%;
+			float: left;
+
+			img { max-width: 100%; }
+		}
+		.mask {
+			background-color: $white;
+			position: absolute;
+			width: 90%;
+			height: 80%;
+			margin: auto;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+
+			li {
+				list-style: none;
+				width: 80px;
+				height: 80px;
+				display: inline-block;
+				margin: 1px 0.2%;
+			}
+		}
+
 		img { max-width: 100%; }
 
 		.text {
