@@ -82,4 +82,8 @@
 		}
 		window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
 	}
+
+	var pixillax = document.querySelector('.pixillax'),
+		parallax = new Parallax(pixillax);
+
 })(jQuery);
