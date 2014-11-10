@@ -153,6 +153,42 @@ header {
 		width: 21%;
 
 		img { max-width: 100%; }
+
+		.pixillax {
+			list-style: none;
+			position: relative;
+			height: 186px;
+
+			.layer { 
+				width: 100%; 
+				height: 100%;
+			}
+
+			div { 
+				position: absolute;
+				left: 0;
+				right: 0;
+
+				img { max-width: initial; }
+			}
+
+			.bot {
+				bottom: 18%;
+				left: 5%;
+			}
+			.inf-l {
+				bottom: 26%;
+				left: -39%;
+			}
+			.p-left {
+				bottom: 40%;
+				left: -54%;
+			}
+			.sup-r {
+				top: 10%;
+				right: -25%;
+			}
+		}
 	}
 
 	.text { 
@@ -259,7 +295,16 @@ header {
 			right: -15%;
 		}
 
+		.slider-wrapper {
+			background-image: url('../images/static/ipad-frame.png');
+			background-repeat: no-repeat;
+			padding: 23px 85px 23px 65px;
 
+			.owl-pagination { display: none; }
+			.owl-buttons .owl-prev,
+			.owl-buttons .owl-next { background: none; }
+
+		}
 		img { max-width: 100%; }
 	}
 
@@ -356,6 +401,7 @@ header {
 }
 
 #video {
+	padding: 0;
 
 	.pixie { 
 		padding: 4.02% 0;
@@ -398,33 +444,36 @@ header {
 			width: 43%;
 			float: left;
 
-			img { max-width: 100%; }
+			img { max-width: 100%; } 
 		}
 		.mask {
-			background-color: $white;
-			position: absolute;
+			background-image: url('../images/static/mosaic_drag/mosaic-bg.png');
+			background-size: cover;
 			width: 90%;
 			height: 80%;
 			margin: auto;
 			left: 0;
-			right: 0;
+			right: 0; 
 			top: 0;
 			bottom: 0;
+			padding: 57px 12px;
+			text-align: center;
 
 			li {
 				list-style: none;
-				width: 80px;
-				height: 80px;
+				width: 100px;
+				height: 100px; 
 				display: inline-block;
 				margin: 1px 0.2%;
+				text-align: center;
 			}
 		}
 
-		img { max-width: 100%; }
+		img { max-width: 100%; } 
 
 		.text {
 			width: 52.6%;
-			margin-top: 11%;
+			margin-top: 9%;
 			color: $white;
 
 			h1 {
@@ -437,7 +486,7 @@ header {
 
 			.compre {
 				width: 100%;
-				padding: 10% 0;
+				padding: 7% 0;
 				border: 3px solid $white;
 				border-radius: 30px 30px 0 30px;
 			}
@@ -486,6 +535,38 @@ footer {
 }
 
 @media only screen and (max-width : 1440px){
+	#era-uma-vez {
+		.pixie {
+			.pixillax {
+				.bot {
+					bottom: 17%;
+					left: 8%;
+				}
+				.inf-l {
+					bottom: 26%;
+					left: -50%;
+				}
+				.p-left {
+					bottom: 40%;
+					left: -71%
+				}
+				.sup-r {
+					top: 10%;
+					right: -34%;
+				}
+			}
+		}
+	}
+	#descubra {
+		.slider {
+			width: 70%;
+
+			.slider-wrapper {
+				background-size: contain;
+				padding: 20px 60px 0px
+			}
+		}
+	}
 	#comece-a-ler {
 
 		.wrapper {
@@ -507,7 +588,6 @@ footer {
 	#era-uma-vez  {
 		.pixie { 
 			width: 16%;
-			//width: 100%; parallax
 			padding: 8.02% 0 3.02%;
 
 			.pixillax {
@@ -521,7 +601,6 @@ footer {
 				}
 
 				div { 
-					//position: relative;
 					position: absolute;
 
 					img { max-width: initial; }
@@ -529,19 +608,19 @@ footer {
 
 				.bot {
 					bottom: 18%;
-					left: 43%;
+					left: 8%;
 				}
 				.inf-l {
 					bottom: 27%;
-					left: 4%;
+					left: -70%;
 				}
 				.p-left {
 					bottom: 40%;
-					left: -7%;
+					left: -99%;
 				}
 				.sup-r {
-					top: 12%;
-					right: 21%;
+					top: 11%;
+					right: -45%;
 				}
 			}
 		}
@@ -590,7 +669,9 @@ footer {
 				right: -15%;
 			}
 			.slider-wrapper {
+				background-size: contain;
 				width: 100%;
+				padding: 20px 55px 20px;
 			}
 		}
 
@@ -627,13 +708,23 @@ footer {
 
 		.wrapper {
 			width: 49.7%;
-			margin-top: 5%;
+			margin-top: 3%;
+
+			.mask{
+				padding: 55px 12px;
+				width: 100%;
+
+				li{
+					width: 73px;
+					height: 73px;
+				}
+			}
 
 			img { max-width: 41%; }
 
 			.text {
 				width: 52.6%;
-				margin-top: 11%;
+				margin-top: 14%;
 				color: $white;
 
 				h1 {
@@ -665,6 +756,25 @@ footer {
 	#era-uma-vez {
 		.pixie {
 			width: 26%;
+
+			.pixillax {
+				.bot {
+					bottom: 17%;
+					left: 8%;
+				}
+				.inf-l {
+					bottom: 26%;
+					left: -50%;
+				}
+				.p-left {
+					bottom: 40%;
+					left: -71%
+				}
+				.sup-r {
+					top: 10%;
+					right: -34%;
+				}
+			}
 		}
 		.text {
 			width: 100%
@@ -729,6 +839,14 @@ footer {
 	#comece-a-ler {
 		.wrapper {
 			width: 75%;
+
+			.mask{ 
+				li{
+					width: 89px;
+					height: 90px;
+				}
+			}
+
 			.text {
 				width: 53.6%;
 				p { font-size: 0.7em; }
@@ -749,8 +867,100 @@ footer {
 		.pixie {
 			width: 100%;
 			padding-top: 20%;
+
+			.pixillax {
+				list-style: none;
+				position: relative;
+				height: 186px;
+
+				.layer { 
+					width: 100%; 
+					height: 100%;
+				}
+
+				div { 
+					position: absolute;
+					left: 0;
+					right: 0;
+
+					img { max-width: initial; }
+				}
+
+				.bot {
+					bottom: 18%;
+					left: 3%;
+				}
+				.inf-l {
+					bottom: 27%;
+					left: -19%;
+				}
+				.p-left {
+					bottom: 40%;
+					left: -27%;
+				}
+				.sup-r {
+					top: 12%;
+					right: -13%;
+				}
+			}
 		}
 	}
+	#proposta {
+		height: 150%;
+
+		.wrapper {
+			width: 90%;
+			float: none;
+			margin: auto;
+	
+			.text {
+				width: 100%;
+				padding-top: 22%;
+				float: none;
+			}
+		
+		}
+		.pixies {
+			float: none;
+			top: auto;
+			right: auto;
+			width: 100%;
+		}
+	}
+	#descubra {
+		height: 170%;
+
+		.pixies {
+			float: none;
+			width: 100%;
+		}
+
+		.wrapper {
+			width: 100%;
+			float: none;
+			clear: both;
+
+			.text {
+				width: 90%;
+				padding-top: 10%;
+				margin: auto;
+				float: none;
+			}
+
+			.slider {
+				width: 85%;
+				float: none;
+				margin: auto;
+
+				.ar-l { left: -45px; }
+				.ar-r { right: -35px; }
+				.slider-wrapper { 
+					padding: 22px 67px 10px 66px;
+				} 
+			}
+		}
+	}
+
 	#etapas {
 		height: 40%;
 
@@ -766,6 +976,39 @@ footer {
 		}
 		.text h1 {
 			height: 600px;
+		}
+	}
+
+	#comece-a-ler {
+		.wrapper {
+			.pixie-drag {
+				float: none;
+				width: 100%;
+				padding: 0;
+			}
+
+			.mask{
+				background-image: url('../images/static/mosaic_drag/mosaic-mobile.png');
+				width: 100%;
+				text-align: left;
+				padding: 0;
+
+				ul {
+					width: 80%;
+					margin: auto;
+					padding: 30px 16px;
+
+					li{
+						width: 103px;
+						height: 103px;
+					}
+				}
+			}
+
+			.text {
+				width: 100%;
+				margin-top: 5%;
+			}
 		}
 	}
 }

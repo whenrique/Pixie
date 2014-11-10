@@ -30,8 +30,10 @@
 
 	//animate pixies
 	new WOW().init();
-	proposta();
-	descubra();
+	if($(window).width() > 1024) {	
+		proposta();
+		descubra();
+	}
 
 	var h = $(window).height(),
 		flag = false,
@@ -111,6 +113,15 @@
 				}
 			});
 		}
+	});
+
+	$('.owl-carousel').owlCarousel({
+		singleItem: true,
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		autoPlay: true,
+		navigation : true,
+		navigationText: ['<span class="arrow-h auto ar-l sprite"></span>','<span class="arrow-h auto ar-r sprite"></span>']
 	});
 
 })(jQuery);
