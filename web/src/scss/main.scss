@@ -189,6 +189,11 @@ header {
 				right: -25%;
 			}
 		}
+
+		.pixie-nome {
+			max-width: 63%;
+			margin-top: -20px;
+		}
 	}
 
 	.text { 
@@ -298,7 +303,7 @@ header {
 		.slider-wrapper {
 			background-image: url('../images/static/ipad-frame.png');
 			background-repeat: no-repeat;
-			padding: 23px 85px 23px 65px;
+			padding: 23px 100px 23px 65px;
 
 			.owl-pagination { display: none; }
 			.owl-buttons .owl-prev,
@@ -456,7 +461,7 @@ header {
 			right: 0; 
 			top: 0;
 			bottom: 0;
-			padding: 57px 12px;
+			padding: 57px 12px 68px;
 			text-align: center;
 
 			li {
@@ -531,9 +536,75 @@ footer {
 		}
 
 	}
-	.right { clear: right; }
+	.right { 
+		clear: right;
+		a {
+			color: $white;
+			text-decoration: none;
+			
+			i {
+				font-size: 2.5em!important;
+				margin: 0 5px 0 0;
+			}
+		}
+	}
 }
+@media only screen and (min-width : 2559px){
+	#era-uma-vez {
+		.pixie {
+			.pixillax {
+				.bot {
+					bottom: 17%;
+					left: 3%;
+				}
+				.inf-l {
+					bottom: 26%;
+					left: -28%;
+				}
+				.p-left {
+					bottom: 40%;
+					left: -39%;
+				}
+				.sup-r {
+					top: 11%;
+					right: -19%;
+				}
+			}
 
+			.pixie-nome {
+				max-width: 63%;
+				margin-top: -20px;
+			}
+		}
+	}
+	#descubra {
+		.slider {
+			.slider-wrapper{
+				background-size: contain;
+				padding: 37px 90px 0px 89px;
+			}
+		}
+	}
+	#comece-a-ler {
+		.wrapper {
+			.mask {
+				padding: 83px 12px;
+
+				li{
+					width: 130px;
+					height: 130px;
+					margin: 4px 0.7%;
+
+					img { width: 100%; }
+				}
+			}
+
+			.text {
+				margin-top: 19%;
+			}
+		}
+	}
+}
 @media only screen and (max-width : 1440px){
 	#era-uma-vez {
 		.pixie {
@@ -554,6 +625,9 @@ footer {
 					top: 10%;
 					right: -34%;
 				}
+			}
+			.pixie-nome {
+				max-width: 100%;
 			}
 		}
 	}
@@ -622,6 +696,10 @@ footer {
 					top: 11%;
 					right: -45%;
 				}
+			}
+
+			.pixie-nome {
+				max-width: 100%;
 			}
 		}
 
@@ -902,6 +980,10 @@ footer {
 					top: 12%;
 					right: -13%;
 				}
+			}
+
+			.pixie-nome {
+				max-width: 40%;
 			}
 		}
 	}

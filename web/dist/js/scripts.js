@@ -30,10 +30,10 @@
 
 	//animate pixies
 	new WOW().init();
-	if($(window).width() > 1024) {	
-		proposta();
-		descubra();
-	}
+	// if($(window).width() > 1024) {	
+	// 	proposta();
+	// 	descubra();
+	// }
 
 	var h = $(window).height(),
 		flag = false,
