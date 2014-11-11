@@ -30,60 +30,6 @@
 
 	//animate pixies
 	new WOW().init();
-	// if($(window).width() > 1024) {	
-	// 	proposta();
-	// 	descubra();
-	// }
-
-	var h = $(window).height(),
-		flag = false,
-		dflt 	= ['flipOutY', 'flipOutX', 'zoomOut', 'flipOutX', 'rotateOutUpLeft', 'zoomOut'],
-		effect 	= ['bounceInDown', 'flipInX', 'zoomIn', 'flipInX', 'bounceInUp', 'zoomIn'];
-	function proposta(){
-		var pixie 	= $('#proposta .wow');
-
-		$(window).scroll(function(){
-			$(pixie).each(function(id){
-				var s = $(window).scrollTop();
-
-				if(s != h) {
-					$(this).css({'-webkit-animation-name': dflt[id]});
-				} else {
-					$(this).css({'-webkit-animation-name': effect[id], 'visibility': 'visible'});
-				}
-			});
-		});
-	}
-
-	function descubra(){
-		var pixie 	= $('#descubra .wow');
-
-		$(window).scroll(function(){
-			$(pixie).each(function(id){
-				var s = $(window).scrollTop();
-
-				if(s != h * 2) {
-					$(this).css({'-webkit-animation-name': dflt[id]});
-				} else {
-					$(this).css({'-webkit-animation-name': effect[id], 'visibility': 'visible'});
-				}
-			});
-		});
-	}
-
-  	function disable_scroll() {
-		if (window.addEventListener) {
-		    window.addEventListener('DOMMouseScroll', wheel, false);
-		}
-		window.onmousewheel = document.onmousewheel = wheel;
-	}
-
-	function enable_scroll() {
-	  	if (window.removeEventListener) {
-	    	window.removeEventListener('DOMMouseScroll', wheel, false);
-		}
-		window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
-	}
 
 	var pixillax = document.querySelector('.pixillax'),
 		parallax = new Parallax(pixillax);
