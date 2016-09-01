@@ -2,8 +2,8 @@ var gulp = require('gulp'),
 	bs   = require('browser-sync'),
 	sass = require('gulp-ruby-sass'),
 	reload = bs.reload,
-  jshint = require('gulp-jshint'),
-  uglify = require('gulp-uglify');
+  	jshint = require('gulp-jshint'),
+  	uglify = require('gulp-uglify');
 
 gulp.task('bs', function() {
 	bs({
@@ -14,7 +14,7 @@ gulp.task('bs', function() {
 });
 
 gulp.task('bs-reload', function () {
-    bs.reload();
+	bs.reload();
 });
 
 gulp.task('sass', function() {
@@ -35,7 +35,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('default', ['sass', 'bs', 'js'], function() {
-	gulp.watch('src/scss/*.scss', ['sass']);
+  gulp.watch('src/scss/*.scss', ['sass']);
   gulp.watch('src/js/*.js', ['js']);
   gulp.watch('*.html', ['bs-reload']);
 });
